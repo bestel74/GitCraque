@@ -1,3 +1,6 @@
 [submodule "libqgit2"]
 	path = libqgit2
 	url = http://anongit.kde.org/libqgit2.git
+[submodule "libgit2"]
+	path = libgit2
+	url = https://github.com/libgit2/libgit2.git
