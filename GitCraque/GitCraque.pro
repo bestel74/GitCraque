@@ -25,8 +25,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 INCLUDEPATH +=
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    renderer.cpp \
+    gitcommitobj.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    renderer.h \
+    gitcommitobj.h
 
 FORMS    += mainwindow.ui
+
+linux:{
+    LIBS += -lgit2
+}
